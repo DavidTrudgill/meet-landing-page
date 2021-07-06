@@ -1,0 +1,63 @@
+:root {
+    --duck-egg: #4D96A9;
+    --aqua: #8FE3F9;
+
+    --aubergine: #855FB1;
+    --lilac: #D9B8FF;
+
+    --black: #28283D;
+    --smoke: #87879D;
+    --white: #FAFAFA;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+
+nav {
+    width: 100vw;
+    height: 7.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    font-size: 1.75rem;
+}
+
+.hero {
+
+}
+
+.hero__image-left {
+    
+
+}
+
+.hero__image-right {
+    
+
+}
+
+.hero__cta-container {
+   
+}
+
+.hero__headline {
+
+}
+
+.hero__cta-paragraph {
+
+}
+
+.hero__button-container {
+
+}
+
+button {
+
+}

@@ -1,5 +1,6 @@
 :root {
     --duck-egg: #4D96A9;
+    --pale-duck-egg: #71C0D4;
     --aqua: #8FE3F9;
 
     --aubergine: #855FB1;
@@ -11,9 +12,14 @@
 }
 
 * {
+    font-family: 'Red Hat Display', sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0; 
+}
+
+body {
+    overflow-x: hidden;
 }
 
 nav {
@@ -22,6 +28,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .logo {
@@ -29,35 +36,91 @@ nav {
 }
 
 .hero {
+width: 100vw;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 
 }
 
 .hero__image-left {
+    width: auto;
+    max-height: 19rem;
+    background-image: url(/starter-code/assets/desktop/image-hero-left.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top left;
     
 
 }
 
 .hero__image-right {
-    
+    width: auto;
+    max-height: 19rem;
+    background-image: url(/starter-code/assets/desktop/image-hero-right.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom right;
 
 }
 
 .hero__cta-container {
-   
+    width: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 3.5rem 4rem;
 }
 
 .hero__headline {
-
+    text-align: center;
+    color: var(--black);
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 4rem;
+    width: 10ch;
+    padding-bottom: 1rem;
 }
 
 .hero__cta-paragraph {
+    text-align: center;
+    color: var(--smoke);
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    width: 45ch;
+    padding-bottom: 2rem;
 
 }
 
 .hero__button-container {
+    width: 21.875rem;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.button {
+color: var(--white);
+font-size: 1rem;
+line-height: 1.625rem;
+padding: 0.625em 1.875em;
+margin: 0.5rem;
+font-weight: bold;
+border: hidden;
+border-radius: 2rem;
+cursor: pointer;
 
 }
 
-button {
+.duck-egg {
+    background-color: var(--duck-egg);
+}
 
+.aubergine {
+    background-color: var(--aubergine);
+}
+
+.hero__button-span {
+    color: var(--aqua);
 }
